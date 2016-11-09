@@ -1,0 +1,6 @@
+SELECT *,  count(country_status) as total FROM `ukraine` where country_status!='' GROUP BY country_status order by total DESC;
+
+
+SELECT *, count(household_status) as total  FROM `ukraine` where country_status='better' GROUP BY household_status;
+
+SELECT * FROM `ukraine` where country_status='better' AND household_status='very';

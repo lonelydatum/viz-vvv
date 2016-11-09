@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Visualizing Voices of the Vulnerable</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<meta name="keywords" content="lonelydatum, Gar Liu, Data Visualization, DataViz, Visualizing Voices of the Vulnerable, UNGlobal Pulse, EaselJS, Canvas, HTML5"> 
+		<meta name="description" content="Visualizing Voices of the Vulnerable - By lonelydatum"> 
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans|Terminal+Dosis+Light&v2' rel='stylesheet' type='text/css'>
+        <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+        
+
+    </head>
+    <body>
+        <canvas id="mainCanvas" width="1000" height="600"></canvas>
+        <div class="main">
+        	<h1 class="title">Visualizing Voices of the Vulnerable</h1>
+        	<p class="description">is a project that takes a snapshot between May-August 2010, illuminating how people are dealing with the effects of the global economic crisis. People were asked to participate in a survey conducted through SMS. Their responses, which were channeled through mobile phones, revealed unique and touching stories.   This project aims to show these emotions.</p>
+        	<p>These were the 5 questions that were asked:</p> 
+        
+        <ol class="questions">
+        	<li class="relationship_household">In the past year, meeting your household needs has been: Easier, Same, More difficult, Very difficult</li>
+        	<li class="relationship_country">In the past year, how has your country's economic situation changed?: Better, Same, Worse, Much Worse</li>        	
+        	<li class="household_changes"><input type="radio" name="sex" value="household_changes" onclick="viewAnswers('household_changes')"/>What has been the greatest change you had to make to meet your household needs this past year?</li>
+        	<li class="qualitylife_changes"><input type="radio" name="sex" value="qualitylife_changes" onclick="viewAnswers('qualitylife_changes')" />How has your quality of life changed over the past year?</li>
+        	<li class="future"><input type="radio" name="sex" value="future" CHECKED onclick="viewAnswers('future')" />In one word, how do you feel about your future?</li>
+        </ol>
+        
+		<p>The same 5 questions were translated and asked in the following five countries:</p>
+		
+			<ol>
+        	<li><input class="chk" type="checkbox" id="india" checked onclick="toggleIndia()" />India</li>
+        	<li><input class="chk" type="checkbox" id="iraq" checked onclick="toggleIraq()"  />Iraq</li>
+        	<li><input class="chk" type="checkbox" id="mexico" checked onclick="toggleMexico()"  />Mexico</li>
+        	<li><input class="chk" type="checkbox" id="uganda" checked onclick="toggleUganda()"  />Uganda</li>     	
+        	<li><input class="chk" type="checkbox" id="ukraine" checked onclick="toggleUkraine()"  />Ukraine</li>
+        	<ol>
+       
+		
+        <br>
+        
+        	
+        
+   	</div>
+   	
+   	
+   	
+   
+   	<div class="share">
+   		<g:plusone size="medium"></g:plusone>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://lonelydatum.com/p/vvv/" data-text="Visualizing Voices of the Vulnerable" data-count="horizontal" data-via="lonelydatum" data-related="UNGlobalPulse">Tweet</a>
+      <iframe src="http://www.facebook.com/plugins/like.php?app_id=223656951010357&amp;href=http%3A%2F%2Flonelydatum.com%2Fp%2Fvvv%2F&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+      
+
+
+	</div>
+	
+	
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+   	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+   	<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7302830-2']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script> 
+
+		<script type="text/javascript" src="http://code.createjs.com/createjs-2013.09.25.min.js"></script>
+        <script type="text/javascript" src="lib/Tween.js"></script>
+        <script type="text/javascript" src="lib/BlendModeMultiply.js"></script>
+        
+        
+        <script type="text/javascript" src="lib/jquery-1.6.1.min.js"></script>
+        <script type="text/javascript" src="lib/modernizr-2.0.4.js"></script>        
+        <script src="views/Relation.js"></script>
+        <script src="views/RelationCountry.js"></script>        
+        <script src="views/TabCountry.js"></script>
+        <script src="views/TabHousehold.js"></script>
+        
+        <script src="index.js"></script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </body>
+</html>
+
+
